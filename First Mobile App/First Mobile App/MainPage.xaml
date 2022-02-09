@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="First_Mobile_App.MainPage" NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Image Source="logo.png" Aspect="AspectFit"/>
+
+        <StackLayout Padding="40,30">
+            <Label Text="Логин"/>
+            <Frame BorderColor="Black" Padding="0">
+                    <Entry/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="40,30">
+            <Label Text="Пароль"/>
+            <Frame BorderColor="Black" Padding="0">
+                <Entry IsPassword="True"/>
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Text="Зарегистрироваться" FontSize="6" x:Name="btnRegistration" Clicked="btnRegistration_Clicked"></Button>
+            <Button Text="Войти" x:Name="btnLogin" Clicked="btnLogin_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
