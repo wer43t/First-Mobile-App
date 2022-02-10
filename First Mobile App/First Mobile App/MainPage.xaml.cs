@@ -16,9 +16,9 @@ namespace First_Mobile_App
             await Navigation.PushAsync(new PageRegistration());
         }
 
-        private void btnLogin_Clicked(object sender, EventArgs e)
+        private async void btnLogin_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new ProjectsPage());
         }
     }
 }
