@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace First_Mobile_App
+namespace First_Mobile_App.SubProjectPages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProjectPage : TabbedPage
+    public partial class PageImages : ContentPage
     {
-        public ProjectPage(string pageName)
+        public PageImages()
         {
             InitializeComponent();
-            Title = pageName;
         }
     }
 }

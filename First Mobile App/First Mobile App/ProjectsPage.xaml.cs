@@ -12,14 +12,30 @@ namespace First_Mobile_App
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ProjectsPage : ContentPage
     {
+        public List<string> Projects { get; set; }
         public ProjectsPage()
         {
             InitializeComponent();
+            Projects = new List<string>();
+            this.BindingContext = this;
+            FillList();
         }
 
-        private void lwProjects_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void lwProjects_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            await Navigation.PushAsync(new ProjectPage(lwProjects.SelectedItem.ToString()));
+        }
 
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+        }
+
+        private void FillList()
+        {
+            for(int i = 0; i < 20; i++)
+            {
+                Projects.Add($"Проект {i}");
+            }
         }
     }
 }
