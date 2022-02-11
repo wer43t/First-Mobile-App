@@ -7,6 +7,6 @@
     <TabbedPage.Children>
         <local:PageAbout Title="О проекте" />
         <local:PageImages Title="Картинки" />
-        <ContentPage Title="Контакты" />
+        <local:PageContacts Title="Контакты" />
     </TabbedPage.Children>
 </TabbedPage>
