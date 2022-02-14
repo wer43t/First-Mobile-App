@@ -3,10 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="First_Mobile_App.SubProjectPages.PageContacts">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="40,40" Spacing="30">
+            <StackLayout>
+                <Label Text="Телефон"/>
+                <Frame BorderColor="Black" Padding="0">
+                    <Entry/>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Телефон"/>
+                <Frame BorderColor="Black" Padding="0">
+                    <Entry/>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="E-mail"/>
+                <Frame BorderColor="Black" Padding="0">
+                    <Entry/>
+                </Frame>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Адрес"/>
+                <Frame BorderColor="Black" Padding="0">
+                    <Entry/>
+                </Frame>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

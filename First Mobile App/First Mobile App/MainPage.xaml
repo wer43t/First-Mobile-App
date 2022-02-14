@@ -20,7 +20,7 @@
             </Frame>
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="115">
             <Button Text="Зарегистрироваться" FontSize="6" x:Name="btnRegistration" Clicked="btnRegistration_Clicked"></Button>
             <Button Text="Войти" x:Name="btnLogin" Clicked="btnLogin_Clicked"></Button>
         </StackLayout>
